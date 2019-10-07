@@ -33,4 +33,7 @@ def mergeSort(arr, start, end):
 
 
 arr = [0, 7, 8, 5, 4, 9, 2, 22]
-print('Sorted array:', mergeSort(arr, 0, len(arr) - 1))
+if len(arr) == 1:
+    print('Sorted array:', arr)
+else:
+    print('Sorted array:', mergeSort(arr, 0, len(arr) - 1))
